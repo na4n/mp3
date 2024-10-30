@@ -1,0 +1,7 @@
+what I did
+ -- babel to compile src to lib
+
+babel --> JSX transpiler
+webpack or use lite-server
+
+
