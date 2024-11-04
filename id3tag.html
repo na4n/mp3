@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>page!!</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.js" integrity="sha512-fCU+rmH3nS/RJaTSl/ylo/PxwWIZwJts3rfxRylSPqGYMJGPLXvPJGOTF+ECb0K5m9rSXbkCNg2PR7WKGWRTVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <input type="file" id="input" />
+        <script>
+            console.log('file was loaded')
+            if(document.getElementById('input')?.files[0]){
+                var jsmediatags = window.jsmediatags;
+                jsmediatags.read(document.getElementById('input').files[0], {
+                    onSuccess: function(tag) {
+                        console.log(tag);
+                    },
+                    onError: function(error) {
+                        console.log(error);
+                    }
+                });
+            }
+        </script>
+    </body>
+
+</html>
+

@@ -1,13 +1,13 @@
-import React from "react"
+import React, { useState } from 'react';
 
-function App() {
-    return (<div>
-        <h2>Welcome to React App</h2>
-        <h3>Date : {new Date().toDateString()}</h3>
-    </div>)
-}
+import MetadataParse from './MetadataParse'
+const App = () => {
+  return (
+    <div>
+      <MetadataParse />
+    </div>
+  );
+};
 
-export default App
-
-
+export default App;
 
