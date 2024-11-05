@@ -1,5 +1,3 @@
-"use client"
-
 import React, { useState } from 'react';
 var jsmediatags = require('./jsmediatags.min.js')
 
@@ -18,7 +16,7 @@ const MetadataParse = () => {
                 onSuccess: function(tag) {
                     setFileTags(tag?.tags);
                     id3TagParse(tag?.tags);
-                    document.getElementById('image').src = URL.createObjectURL(new Blob([new Uint8Array(tag?.tags?.picture?.data)], { type: tag?.tags?.picture?.format }))
+                    document.getElementById('image').src = URL.createObjectURL(new Blob([new Uint8Array(tag?.tags?.APIC?.data?.data)], { type: tag?.tags?.picture?.format }))
                 },
                 onError: function(error) {
                     setFileTagsError(error);
@@ -68,8 +66,6 @@ const MetadataParse = () => {
                 width="300px" 
             />
 
-
-            <p>Tags</p>
             <p style={{"white-space":"pre-wrap"}}>{fileMetadata ? id3TagParse(fileMetadata) : "" }</p>
         </div>
     );
