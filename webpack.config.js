@@ -2,13 +2,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  webpack5: true,
-  webpack: (config) => {
-    config.resolve.fallback = { fs: false };
-
-    return config;
-  },
-
     // Where files should be sent once they are bundled
  output: {
    path: path.join(__dirname, '/dist'),

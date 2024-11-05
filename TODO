@@ -1,7 +1,10 @@
-what I did
- -- babel to compile src to lib
+parse out object metadata returned:
 
-babel --> JSX transpiler
-webpack or use lite-server
+// two possibilites
+{ 
+    string: string,
+    string: Object
+}
+
 
 
