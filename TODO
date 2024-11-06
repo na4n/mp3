@@ -1,10 +1,15 @@
-parse out object metadata returned:
-
-// two possibilites
-{ 
-    string: string,
-    string: Object
-}
+/// - get background color from image
+///- shadow around current art
 
 
-
+- popout/modal for file metadata
+- refactor for player (control state)
+- alternative art on hover (slides to back)
+- better metadata parsing
+    parse out object metadata returned:
+    // two possibilites
+    { 
+        string: string,
+        string: Object
+    }
+- react native implementation
