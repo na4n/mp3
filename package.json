@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "serve": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "docs": "jsdoc -c jsdoc.conf.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "better-docs": "^2.7.3",
     "install": "^0.13.0",
+    "jsdoc": "^4.0.4",
     "jsmediatags": "^3.9.7",
     "npm": "^10.9.0",
     "react": "^18.3.1",

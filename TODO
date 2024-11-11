@@ -13,3 +13,11 @@
         string: Object
     }
 - react native implementation
+
+------------------------------------------------------
+Split up MetadataParse
+ - id3TagParse: (object of id3tags --> string)
+ - averageColor: (background color 
+
+
+
